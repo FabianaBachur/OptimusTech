@@ -1,0 +1,317 @@
+:root {
+    --fonte-principal: "Inter";
+    --cor-texto-principal: #667085;
+    --cor-texto-secundário: #101828;
+    --cor-branco: #FFFFFF;
+    --cor-destaque-vermelho: #8E2424;
+    --cor-botão-hover: rgb(193, 101, 101);
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-texto-principal);
+}
+
+/* -- Início NavBar -- */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+.logo {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Menu links (home, produtos, recursos e sobre nós) */
+.menu {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+/* Menu links (home, produtos, recursos e sobre nós) */
+.menu__links {
+    margin-right: 27rem;
+}
+
+/* Menu links (home, produtos, recursos e sobre nós) */
+.menu__links-itens {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.10rem;
+    color: var(--cor-texto-principal);
+}
+
+/* Menu links (home, produtos, recursos e sobre nós) */
+.menu__links-itens:hover {
+    background: var(--cor-botão-hover);
+    color: var(--cor-branco);
+}
+
+/* Menu botões (entrar e cadastrar) */
+button {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.7rem 1.10rem;
+    gap: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu__botão-entrar {
+    color: var(--cor-texto-principal);
+    border: none;
+    background: none;
+}
+
+.menu__botão-entrar:hover {
+    background: var(--cor-botão-hover);
+    color: var(--cor-branco);
+}
+
+.menu__botão-cadastrar {
+    border: var(--cor-destaque-vermelho);
+    background: var(--cor-destaque-vermelho);
+    color: var(--cor-branco);
+}
+
+.menu__botão-cadastrar:hover {
+    background: var(--cor-botão-hover);
+    color: black;
+}
+/* -- Fim NavBar -- */
+
+
+/* -- Início Cabeçalho (Sobre nós) -- */
+
+.sobre-nos {
+    margin: 6rem 21rem;
+    text-align: center;
+}
+
+.sobre-nos__tituloSobreNos {
+    font-weight: 600;
+    color: var(--cor-destaque-vermelho);
+}
+
+.sobre-nos__textoDestaque {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--cor-texto-secundário);
+    padding: 1.5rem 0 2.25rem 0;
+}
+
+.sobre-nos__texto {
+    font-size: 20px;
+}
+/* -- Fim Cabeçalho (Sobre nós) -- */
+
+
+/* -- Início Métricas -- */
+
+.metricas {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 7rem;
+}
+
+.metricas__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+    width: 25%;
+    padding: 2rem 0;
+}
+
+.metricas__item-numero {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--cor-destaque-vermelho);
+}
+
+.metricas__item-titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-texto-secundário);
+}
+/* -- Fim Métricas -- */
+
+
+/* Início Vagas Abertas */
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 8rem;
+}
+
+.vagas__vagasAbertas {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cor-destaque-vermelho);
+    border-radius: 16px;
+    background: rgba(142, 36, 36, 0.05);
+    padding: 4px 12px;
+}
+
+.vagas__procurandoTalentos {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-texto-secundário);
+    padding: 1.5rem 0 1.8rem 0;
+}
+
+.vagas__equipeRemota {
+    font-size: 20px;
+    padding-bottom: 3rem;
+}
+
+.vagas img {
+    width: 87%;
+}
+/* Fim Vagas Abertas */
+
+
+/* Início Oportunidades de vagas */
+
+.oportunidades {
+    line-height: 6em;
+    margin: 1rem 25rem 6rem 25rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-texto-secundário);
+}
+
+.oportunidades__emprego {
+    font-size: 18px;
+}
+
+.emprego-cargo {
+    line-height: 2em;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--Gray-200, #EAECF0);
+    border-radius: 16px;
+}
+
+.cargo-salario {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 16px;
+    color: var(--cor-texto-principal);
+}
+/* Fim Oportunidades de vagas */
+
+/* Início Depoimentos dos colaboradores */
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 7rem;
+    padding: 4rem;
+    border-radius: 16px;
+    background: rgba(195, 25, 25, 0.03);
+}
+
+.depoimentos__sobreNos {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-destaque-vermelho);
+}
+
+.depoimentos__colaboradores {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--cor-texto-secundário);
+    line-height: 2.8rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.depoimentos__avatar {
+    width: 5%;
+}
+
+.depoimentos__nomeColaborador {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-texto-secundário);
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.depoimentos__cargo {
+    font-size: 14px;
+}
+/* Fim Depoimentos dos colaboradores */
+
+
+/* Início Acompanhe as nossas opurtunidades de vagas */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    background: #F9FAFB;
+    padding: 5rem 0 5rem 0;
+}
+
+.formulario__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-texto-secundário);
+}
+
+.formulario__texto {
+    font-size: 20px;
+    padding: 0.8rem 0 1.5rem 0;
+}
+
+.formulario__cadastro {
+    display: flex;
+    gap: 1rem;
+}
+
+.cadastro__seuEmail {
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: var(--cor-branco);
+    padding: 0.8rem 12rem 0.8rem 1rem;
+}
+
+.cadastro__seuEmail::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-texto-principal);
+}
+
+.cadastro__botaoCadastrar {
+    border: 1px solid var(--cor-destaque-vermelho);
+    background: var(--cor-destaque-vermelho);
+    color: var(--cor-branco);
+    cursor: pointer;
+}
+
+.cadastro__botaoCadastrar:hover {
+    background: var(--cor-botão-hover);
+    border: var(--cor-botão-hover);
+    color: black;
+}
+
+.formulario__direitosReservados {
+    width: 27%;
+    padding-top: 0.5rem;
+}
+/* Fim Acompanhe as nossas opurtunidades de vagas */
